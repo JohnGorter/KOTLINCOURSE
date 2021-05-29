@@ -9,9 +9,9 @@ fun main() {
     
     fun addUser() {
         print("gimme a name?")
-        val name = readLine()
+        const name = readLine()
         print("gimme a lastname?")
-        val lastname = readLine()
+        const lastname = readLine()
         if (name != null && lastname != null) 
             addressbook.putIfAbsent(name,lastname)
     }
