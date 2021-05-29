@@ -4,7 +4,7 @@ class EventManager {
     private constructor() {}
 
     companion object {
-        private var instance: EventManager =  EventManager()
+        var managerInstance: EventManager =  EventManager()
     }
 
     fun sendEvent(eventName: String): Boolean {
