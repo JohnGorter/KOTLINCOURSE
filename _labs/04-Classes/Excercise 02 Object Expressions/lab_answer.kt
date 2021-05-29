@@ -4,14 +4,7 @@ class EventManager {
     private constructor() {}
 
     companion object {
-        private var instance: EventManager? = null
-        val managerInstance: EventManager
-            get() {
-                if (instance == null) {
-                    instance = EventManager()
-                }
-                return instance!! 
-            }
+        private var instance: EventManager =  EventManager()
     }
 
     fun sendEvent(eventName: String): Boolean {
